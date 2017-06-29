@@ -33,11 +33,6 @@ module.exports = {
     },
     resolve: {
         modulesDirectories: ['fonts','node_modules'],
-        alias: {
-            'inputmask.dependencyLib': 'jquery.inputmask/extra/dependencyLibs/inputmask.dependencyLib.js',
-            'inputmask': 'jquery.inputmask/dist/inputmask/inputmask.js',
-            'inputmask.numeric.extensions': 'jquery.inputmask/dist/inputmask/inputmask.date.extensions.js'
-        },
         extensions: ['', '.json', '.js', '.jsx'],
     },
     plugins: [

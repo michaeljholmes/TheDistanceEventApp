@@ -1,9 +1,27 @@
 .container{
+  max-width: 400px;
+  margin: auto;
   .event{
+    position: relative;
     border: 2px solid red;
-    margin: 10px;
+    margin: 10px 0;
+
+    &:hover{
+      .moreInfo{
+        position: absolute;
+        display: block;
+        top: 0;
+        background-color: yellow;
+      }
+    }
   }
+
+  .moreInfo{
+    display: none;
+  }
+
   a{
     text-decoration: none;
+    color: green;
   }
 }

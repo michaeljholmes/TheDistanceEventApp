@@ -11,12 +11,14 @@ class Home extends Component {
         const {events} = this.props;
         return (
             <div className={styles.container}>
+                <h1>Events!</h1>
                 {events && events.map(event =>
                     <div key={event.id} className={styles.event}>
                         <Link to={event.id}>
                             {event.name.text} <br/>
                             Event Date : {moment(event.start.local).format('YYYY-MM-DD')} <br/>
                             Start Time : {moment(event.start.local).format('hh:mm')}
+                            <div className={styles.moreInfo}>Click for more info!</div>
                         </Link>
                     </div>)
                 }
