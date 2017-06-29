@@ -1,0 +1,1 @@
+export const STORE_EVENTS ='STORE_EVENTS';
